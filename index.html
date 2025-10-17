@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amrutha | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Amrutha</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section active">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Hey there 👋</h2>
+        <p class="intro">
+          I’m <span>Amrutha</span> — a passionate web developer and AI enthusiast.  
+          I believe every line of code can tell a story and solve real-world problems.
+        </p>
+        <p>
+          I specialize in <strong>Web Development</strong> (HTML, CSS, JavaScript)  
+          and <strong>Artificial Intelligence</strong> (Python, ML, NLP),  
+          blending logic with design to make technology feel human.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>AI</span>
+        </div>
+
+        <h3>My Journey</h3>
+        <ul class="timeline">
+          <li><strong>2023:</strong> Started learning Web Development</li>
+          <li><strong>2024:</strong> Built Crop Yield Predictor</li>
+          <li><strong>2025:</strong> Exploring AI & ML projects</li>
+        </ul>
+
+        <label class="upload-btn">
+          📸 Upload My Photo
+          <input type="file" id="photoUpload" accept="image/*" onchange="previewPhoto(event)">
+        </label>
+      </div>
+
+      <div class="about-photo">
+        <img id="profilePhoto" src="photo.jpeg" alt="Amrutha's Photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>My Work</h2>
+    <p class="subtitle">A few things I’ve built and learned along the way 🚀</p>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>🌾 Crop Yield Predictor</h3>
+        <p>Predicting crop productivity using machine learning on soil & weather data.</p>
+        <a href="https://github.com/yourusername/crop-yield-predictor" target="_blank" class="btn">Explore</a>
+      </div>
+      <div class="project-card">
+        <h3>💼 LIC Management System</h3>
+        <p>Efficient data handling for life insurance using linked lists and hash tables in C.</p>
+        <a href="https://github.com/yourusername/LIC-Management-System" target="_blank" class="btn">Explore</a>
+      </div>
+      <div class="project-card">
+        <h3>🤖 AI Chatbot</h3>
+        <p>Conversational assistant built with Python and NLP, bringing personality to chat.</p>
+        <a href="https://github.com/yourusername/AI-Chatbot" target="_blank" class="btn">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Let’s Connect</h2>
+    <p>Thanks for stopping by — I’d love to hear your story too 💌</p>
+
+    <div class="contact-details">
+      <ul>
+        <li>📧 Email: <a href="mailto:amrutha@example.com">amrutha@example.com</a></li>
+        <li>💻 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li>🔗 LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></li>
+        <li>📞 Phone: <a href="tel:+911234567890">+91 1234567890</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send me a message</h3>
+      <form onsubmit="alert('Thank you! Your message has been received.'); return false;">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Amrutha | Made with ☕ and Passion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
